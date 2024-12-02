@@ -1,6 +1,6 @@
 class ApiConfig {
   // Base URL
-  static const String baseUrl = 'http://localhost:8080/api';
+  static const String baseUrl = 'http://10.250.25.39:8080/api';
   
   // API Endpoints
   static const String login = '/login';

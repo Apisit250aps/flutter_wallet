@@ -1,5 +1,6 @@
 
 import 'package:flutter_wallet/modules/auth/bindings/auth_binding.dart';
+import 'package:flutter_wallet/modules/auth/views/forgot_password_screen.dart';
 import 'package:flutter_wallet/modules/auth/views/login_screen.dart';
 import 'package:flutter_wallet/modules/auth/views/register_screen.dart';
 import 'package:flutter_wallet/sample_view.dart';
@@ -18,6 +19,11 @@ class AppPages {
     GetPage(
       name: '/register',
       page: () => RegisterScreen(),
+      binding: AuthBinding(),
+    ),
+    GetPage(
+      name: '/forgot-password',
+      page: () => ForgotPasswordScreen(),
       binding: AuthBinding(),
     ),
     GetPage(
