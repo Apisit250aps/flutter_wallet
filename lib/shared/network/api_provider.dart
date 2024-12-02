@@ -47,6 +47,24 @@ class ApiProvider {
     }
   }
 
+  Future<Response> put(String path, {dynamic data}) async {
+    try {
+      final response = await _dio.put(path, data: data);
+      return response;
+    } catch (e) {
+      throw _handleError(e);
+    }
+  }
+
+  Future<Response> delete(String path, {dynamic data}) async {
+    try {
+      final response = await _dio.delete(path, data: data);
+      return response;
+    } catch (e) {
+      throw _handleError(e);
+    }
+  }
+
   // Add other methods (put, delete, etc.)
 
   Exception _handleError(dynamic error) {
