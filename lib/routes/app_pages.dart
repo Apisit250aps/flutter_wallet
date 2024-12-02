@@ -1,5 +1,7 @@
 
 import 'package:flutter_wallet/modules/auth/bindings/auth_binding.dart';
+import 'package:flutter_wallet/modules/auth/views/login_screen.dart';
+import 'package:flutter_wallet/modules/auth/views/register_screen.dart';
 import 'package:flutter_wallet/sample_view.dart';
 import 'package:flutter_wallet/shared/middleware/auth_middleware.dart';
 import 'package:get/get.dart';
@@ -10,12 +12,12 @@ class AppPages {
   static final routes = [
     GetPage(
       name: '/login',
-      page: () => SampleView(),
+      page: () => LoginScreen(),
       binding: AuthBinding(),
     ),
     GetPage(
       name: '/register',
-      page: () => SampleView(),
+      page: () => RegisterScreen(),
       binding: AuthBinding(),
     ),
     GetPage(
